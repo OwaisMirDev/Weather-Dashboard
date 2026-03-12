@@ -1,6 +1,6 @@
 
 import { Container } from './Components/Container'
-import { CurrentWeather } from './Components/CurrentWeather'
+import { CurrentWeather } from './Components/CurrentWeather/CurrentWeather'
 import { HourlyForecast } from './Components/HourlyForecast'
 import { SevenDayForecast } from './Components/SevenDayForecast'
 
