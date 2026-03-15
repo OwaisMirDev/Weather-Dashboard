@@ -1,19 +1,16 @@
+import { Header } from "./components/Header"
+import { SearchBar } from "./components/SearchBar"
 
-import { Container } from './Components/Container'
-import { CurrentWeather } from './Components/CurrentWeather/CurrentWeather'
-import { HourlyForecast } from './Components/HourlyForecast'
-import { SevenDayForecast } from './Components/SevenDayForecast'
 
 function App() {
 
 
-  return (
-    <Container>
-      <CurrentWeather />
-      <SevenDayForecast />
-      <HourlyForecast />
-    </Container>
-  )
+  return <div className="bg-weather-night min-h-screen text-white p-4 md:p-8 flex justify-center">
+    <div className="border-2 border-yellow-500 max-w-5xl w-full flex flex-col gap-6">
+      <Header />
+      <SearchBar />
+    </div>
+  </div>
 }
 
 export default App

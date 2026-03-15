@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
-@theme {
-    --background-image-night: linear-gradient(to bottom right, #020617, #1e1b4b, #312e81);
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+
+/* Glass input field  */
+.glass-input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3 ease;
+    outline: none;
+}
+
+.glass-input:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Weather background gradients */
+.bg-weather-cloudy {
+    background: linear-gradient(to bottom right, #64748b, #94a3b8, #cbd5e1);
+}
+
+.bg-weather-night {
+    background: linear-gradient(to bottom right, #020617, #1e1b4b, #312e81);
 }
